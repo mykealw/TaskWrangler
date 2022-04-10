@@ -14,8 +14,8 @@ export  class Task {
     get TaskTemplate(){
         return /*html*/ `
         <li class="list-group-item">
-        <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." ${this.checked == true ? "checked" : ""}>
-        ${this.todo}<i class="mdi mdi-delete text-dark selectable on-hover" onclick="app.tasksController.deleteTask('${this.id}')"></i>
+        <input class="form-check-input me-1 "  type="checkbox" value="" aria-label="..." onmousedown="app.tasksController.checkTask('${this.id}')" ${this.checked == true ? "checked" : ""}>
+       <span class="${this.checked == true ? "text-decoration-line-through" : ''}"> ${this.todo} </span> <i class="mdi mdi-delete text-dark selectable on-hover"  onclick="app.tasksController.deleteTask('${this.id}')"></i>
         </li>
         `
     }

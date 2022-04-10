@@ -36,7 +36,7 @@ get ListTemplate () {
     return /*html*/ `
     <div class="col-md-3">
     <div class="rounded-top bg-light">
-      <h3 class="text-light p-3 rounded-top ${listColor} "  >${this.nickName}<i class="mdi mdi-delete text-dark selectable on-hover" onclick="app.listsController.deleteList('${this.id}')"></i></h3>
+      <h3 class=" ${listColor == "bg-Cream" ? "text-dark": "text-light"} p-3 rounded-top ${listColor} "  >${this.nickName}<i class="mdi mdi-delete text-dark selectable on-hover" onclick="app.listsController.deleteList('${this.id}')"></i></h3>
       <div class="" id="tasks"> 
       <ul class="list-group">
         ${this.Tasks}
@@ -45,7 +45,7 @@ get ListTemplate () {
       <form class="bg-light" onsubmit="app.tasksController.addTask('${this.id}')">
         <div class="input-group bg-light">
         <label for="todo" class="form-label visually-hidden">todo</label>
-          <input type="text" class="form-control" placeholder="New Task" name= "todo" id="todo" required minlength="2" required>
+          <input type="text" class="form-control" placeholder="New Task" name= "todo" id="todo"  minlength="3" maxlength="50" required>
           <button class="btn btn-outline-secondary bg-light" type="submit">+</button>
         </div>
     </form>

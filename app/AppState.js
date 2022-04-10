@@ -10,42 +10,54 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/List').List[]} */
   lists = [ new List ({
-nickName: 'Ranch',
+nickName: 'Job',
 id: "dog",
 color: "Red"
 }),
 new List ({
-  nickName: "Home Things",
+  nickName: "Home ",
   id: "cat",
   color: "Gold"
-})]
+}),
+new List ({
+  nickName: 'Gym',
+  id: "fish",
+  color: "Cream"
+  })]
 
   /** @type {import('./Models/Task').Task[]} */
   tasks = [ 
     new Task({
-    todo: "Dinner",
+    todo: "Email Carol Baskins",
     id: generateId(),
     parentID: "dog",
     checked: false
   }),
 new Task({
-  todo: "things",
+  todo: "Tan",
   id: generateId(),
   parentID: "cat",
   checked: false
 }),
 new Task({
-todo: "Dinner",
+todo: "Pretend to do work",
 id: generateId(),
 parentID: "dog",
 checked: false
 }),
 new Task({
-todo: "things",
+todo: "Laundry",
 id: generateId(),
 parentID: "cat",
 checked: false
-})]
+}),
+new Task({
+  todo: "Gains!",
+  id: generateId(),
+  parentID: "fish",
+  checked: false
+  })
+]
 }
 
 export const ProxyState = new Proxy(new AppState(), {

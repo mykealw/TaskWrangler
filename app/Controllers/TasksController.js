@@ -36,4 +36,8 @@ async deleteTask(taskID){
 
 
  }
+ checkTask(taskID){
+    tasksService.checkTask(taskID)
+
+ }
 }
