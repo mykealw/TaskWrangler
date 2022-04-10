@@ -9,11 +9,11 @@ ProxyState.lists.forEach(list => template += list.ListTemplate)
 document.getElementById("list").innerHTML = template
 // console.log(template, "this is the template");
 }
-function _countTask(){
-    let  totalCount = 0
-    ProxyState.tasks.forEach(task => totalCount++)
-    document.getElementById("totalTask").innerText = totalCount.toString()
-}
+// function _countTask(){
+//     let  totalCount = 0
+//     ProxyState.tasks.forEach(task => totalCount++)
+//     document.getElementById("totalTask").innerText = totalCount.toString()
+
     // //     let count = document.getElementById("taskCount").childElementCount
     // //     console.log(count, "this is the count");
     // //     document.getElementsByName("totalTask").innerText = count.toString()

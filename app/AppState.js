@@ -34,7 +34,7 @@ new List ({
     checked: false
   }),
   new Task({
-    todo: "Email Carol ",
+    todo: "Sigh, loudly",
     id: generateId(),
     parentID: "dog",
     checked: false
