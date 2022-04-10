@@ -33,6 +33,12 @@ new List ({
     parentID: "dog",
     checked: false
   }),
+  new Task({
+    todo: "Email Carol ",
+    id: generateId(),
+    parentID: "dog",
+    checked: false
+  }),
 new Task({
   todo: "Tan",
   id: generateId(),
@@ -58,7 +64,10 @@ new Task({
   checked: false
   })
 ]
+
 }
+// let totalCount = 0
+// let count = 0
 
 export const ProxyState = new Proxy(new AppState(), {
   get(target, prop) {

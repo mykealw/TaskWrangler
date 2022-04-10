@@ -8,10 +8,15 @@ import { Pop } from "../Utils/Pop.js";
 
 
 
+    
+
 
 export class TasksController{
     constructor(){
         // console.log('hello from task controller');
+        // _countTask()
+//  ProxyState.on('lists', _countTask)
+//  ProxyState.on('tasks', _countTask)
  }
  addTask(parentID){
      window.event.preventDefault()

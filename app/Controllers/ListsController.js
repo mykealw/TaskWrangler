@@ -9,20 +9,30 @@ ProxyState.lists.forEach(list => template += list.ListTemplate)
 document.getElementById("list").innerHTML = template
 // console.log(template, "this is the template");
 }
-
-
+function _countTask(){
+    let  totalCount = 0
+    ProxyState.tasks.forEach(task => totalCount++)
+    document.getElementById("totalTask").innerText = totalCount.toString()
+}
+    // //     let count = document.getElementById("taskCount").childElementCount
+    // //     console.log(count, "this is the count");
+    // //     document.getElementsByName("totalTask").innerText = count.toString()
+    //         }
 
 export class ListsController{
     constructor(){
         // console.log("hello from controller");
         ProxyState.on('lists', _drawList)
         ProxyState.on('tasks', _drawList)
+        // ProxyState.on('lists', _countTask)
+        // ProxyState.on('tasks', _countTask)
         ProxyState.on("lists", saveState)
         ProxyState.on("tasks", saveState)
-
-        loadState()
+        
         _drawList()
-
+        // _countTask()
+        loadState()
+        
     }
 
 

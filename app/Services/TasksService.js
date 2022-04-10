@@ -16,14 +16,14 @@ class TasksService {
     }
     checkTask(taskID){
         let foundTask = ProxyState.tasks.find(t => t.id === taskID)
-        console.log("this is the one", foundTask.checked);
+        // console.log("this is the one", foundTask.checked)
             if (foundTask.checked == true){
                 foundTask.checked = false
             }
             if (foundTask.checked == false){
                 foundTask.checked = true
             }
-            console.log(foundTask.checked, "found task status")
+            // console.log(foundTask.checked, "found task status")
          ProxyState.tasks = ProxyState.tasks.filter(t => t.id !== taskID) 
          ProxyState.tasks = [...ProxyState.tasks, foundTask] 
         }
