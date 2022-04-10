@@ -36,7 +36,7 @@ get ListTemplate () {
     return /*html*/ `
     <div class="col-md-3">
     <div class="rounded-top bg-light">
-      <h3 class="text-light  rounded-top px-2 ${listColor} " style="${listColor}" >${this.nickName}<i class="mdi mdi-delete text-dark selectable on-hover" onclick="app.listsController.deleteList('${this.id}')"></i></h3>
+      <h3 class="text-light p-3 rounded-top ${listColor} "  >${this.nickName}<i class="mdi mdi-delete text-dark selectable on-hover" onclick="app.listsController.deleteList('${this.id}')"></i></h3>
       <div class="" id="tasks"> 
       <ul class="list-group">
         ${this.Tasks}

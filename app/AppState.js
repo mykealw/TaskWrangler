@@ -1,7 +1,7 @@
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 import { List } from "./Models/List.js"
-import { Task } from "./Models/Task.js"
+import {Task} from "./Models/Task.js"
 import { generateId } from "./Utils/generateId.js"
 
 class AppState extends EventEmitter {
@@ -26,10 +26,10 @@ new List ({
     todo: "Dinner",
     id: generateId(),
     parentID: "dog",
-    checked: true
+    checked: false
   }),
 new Task({
-  todo: "fart",
+  todo: "things",
   id: generateId(),
   parentID: "cat",
   checked: false
@@ -38,10 +38,10 @@ new Task({
 todo: "Dinner",
 id: generateId(),
 parentID: "dog",
-checked: true
+checked: false
 }),
 new Task({
-todo: "fart",
+todo: "things",
 id: generateId(),
 parentID: "cat",
 checked: false

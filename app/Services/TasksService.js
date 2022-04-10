@@ -3,6 +3,10 @@ import { Task } from "../Models/Task.js";
 
 
 class TasksService {
+    deleteTask(taskID) {
+        ProxyState.tasks = ProxyState.tasks.filter(t => t.id !== taskID)
+        ProxyState.tasks = [...ProxyState.tasks]
+    }
 
     addTask(taskData){
 

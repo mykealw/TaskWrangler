@@ -26,4 +26,14 @@ export class TasksController{
      console.log(taskData, "this is task data");
      tasksService.addTask(taskData)
  }
+
+async deleteTask(taskID){
+    if(await Pop.confirm()){
+        tasksService.deleteTask(taskID)
+        Pop.toast('Deleted', "success")
+    }
+
+
+
+ }
 }
