@@ -1,0 +1,32 @@
+/* BASIC STYLES HERE */
+
+
+.textshad{
+text-shadow: 1px, 1px 2px rgb(0, 234, 55) !important;
+
+}
+
+.cardbg{
+    background-color: #fff;
+}
+
+.bg-Red{
+    background-color: #c36457 !important;
+}
+
+.bg-Gold{
+    background-color: #c4b573 !important;
+}
+
+.bg-Cream{
+    background-color:  #e5e5c5 !important;
+}
+
+.bg-Grey{
+    background-color: #9da9bf !important;
+    
+}
+
+.bg-Blue{
+    background-color: #545d74 !important;
+}
