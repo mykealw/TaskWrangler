@@ -30,3 +30,7 @@ text-shadow: 1px, 1px 2px rgb(0, 234, 55) !important;
 .bg-Blue{
     background-color: #545d74 !important;
 }
+
+.headertext{
+    font-family: 'Grape Nuts', cursive !important
+}

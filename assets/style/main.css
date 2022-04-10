@@ -3927,7 +3927,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
+flex-direction: column;}
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -6577,7 +6577,7 @@ textarea.form-control-lg {
 
 .d-flex {
   display: flex !important;
-}
+justify-content: center;}
 
 .d-inline-flex {
   display: inline-flex !important;
