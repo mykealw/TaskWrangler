@@ -20,9 +20,11 @@ class TasksService {
             if (foundTask.checked == true){
                 foundTask.checked = false
             }
-            if (foundTask.checked == false){
+            else{
                 foundTask.checked = true
             }
+
+            // foundTask.checked = !foundTask.checked
             // console.log(foundTask.checked, "found task status")
          ProxyState.tasks = ProxyState.tasks.filter(t => t.id !== taskID) 
          ProxyState.tasks = [...ProxyState.tasks, foundTask] 
